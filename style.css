@@ -1,0 +1,12 @@
+.admonition.person {
+    border-left-color: #fc3;
+}
+
+.admonition.person img {
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    float:right;
+    margin: 0 0 1em 1em;
+}
