@@ -1,2 +1,836 @@
+
 <!DOCTYPE html>
-<html class="no-js" lang="en"> <head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="ie=edge" http-equiv="x-ua-compatible"/><meta content="The Computational Vision Lab combines computational theory with behavioral and brain image experiments to understand how we see the world around us." name="description"/><meta content="Daniel Kersten" name="author"/><meta content="Copy to clipboard" name="lang:clipboard.copy"/><meta content="Copied to clipboard" name="lang:clipboard.copied"/><meta content="en" name="lang:search.language"/><meta content="True" name="lang:search.pipeline.stopwords"/><meta content="True" name="lang:search.pipeline.trimmer"/><meta content="No matching documents" name="lang:search.result.none"/><meta content="1 matching document" name="lang:search.result.one"/><meta content="# matching documents" name="lang:search.result.other"/><meta content="[\s\-]+" name="lang:search.tokenizer"/><link href="/assets/images/favicon.ico" rel="shortcut icon"/><meta content="mkdocs-1.1, mkdocs-material-4.6.3" name="generator"/><title>PSY8036SP2018 - Computational Vision Lab</title><link href="../../assets/stylesheets/application.14ebc616.css" rel="stylesheet"/><link href="../../assets/stylesheets/application-palette.b246af5e.css" rel="stylesheet"/><script src="../../assets/javascripts/modernizr.eca31fed.js"></script><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/><style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link href="../../assets/fonts/material-icons.css" rel="stylesheet"/></head> <body class="psy8036sp2018" data-md-color-accent="umn-gold" data-md-color-primary="umn-maroon" dir="ltr"> <svg class="md-svg"> <defs> </defs> </svg> <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/> <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label> <a class="md-skip" href="#data-driven-generative-models-for-perception-dreaming-and-imagining-psy8036sp2018" tabindex="0"> Skip to content </a> <header class="md-header" data-md-component="header"> <nav class="md-header-nav md-grid"> <div class="md-flex"> <div class="md-flex__cell md-flex__cell--shrink"> <a aria-label="University of Minnesota homepage" class="md-header-nav__button md-logo" href="https://twin-cities.umn.edu" title="University of Minnesota homepage"> <img alt="logo" height="38" src="/assets/images/D2D-gld-wht.svg" width="288"/> </a> </div> <div class="md-flex__cell md-flex__cell--shrink"> <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label> </div> <div class="md-flex__cell md-flex__cell--shrink"> <a aria-label="University of Minnesota homepage" class="block-m" href="https://twin-cities.umn.edu" title="University of Minnesota homepage"> <img alt="logo" height="24" src="/assets/images/block-m-gold.svg"/> </a> </div> <div class="md-flex__cell md-flex__cell--stretch"> <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"> <span class="md-header-nav__topic"> <a aria-label="Department of Psychology" class="md-header-nav__parentunit" href="https://psych.umn.edu" title="Department of Psychology"> <small>Department of Psychology</small> </a><br/> <a aria-label="Computational Vision Lab" class="md-header-nav__site-name" href="../.." title="Computational Vision Lab"> Computational Vision Lab </a> </span> <span class="md-header-nav__topic"> <a aria-label="Computational Vision Lab" class="md-header-nav__site-name-title" href="../.." title="Computational Vision Lab"> <small>Computational Vision Lab</small> </a> <br/> <strong> PSY8036SP2018 </strong> </span> </div> </div> <div class="md-flex__cell md-flex__cell--shrink"> <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label> <div class="md-search" data-md-component="search" role="dialog"> <label class="md-search__overlay" for="__search"></label> <div class="md-search__inner" role="search"> <form class="md-search__form" name="search"> <input aria-label="search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/> <label class="md-icon md-search__icon" for="__search"></label> <button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">  </button> </form> <div class="md-search__output"> <div class="md-search__scrollwrap" data-md-scrollfix=""> <div class="md-search-result" data-md-component="result"> <div class="md-search-result__meta"> Type to start searching </div> <ol class="md-search-result__list"></ol> </div> </div> </div> </div> </div> </div> </div> </nav> </header> <div class="md-container"> <main class="md-main" role="main"> <div class="md-main__inner md-grid" data-md-component="container"> <div class="md-sidebar md-sidebar--primary" data-md-component="navigation"> <div class="md-sidebar__scrollwrap"> <div class="md-sidebar__inner"> <nav class="md-nav md-nav--primary" data-md-level="0"> <label class="md-nav__title md-nav__title--site" for="__drawer"> <a class="md-nav__button md-logo" href="../.." title="Computational Vision Lab"> <img alt="logo" height="28" src="/assets/images/D2D-gld-wht.svg"/> </a> Computational Vision Lab </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a class="md-nav__link" href="../.." title="Home"> Home </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../publications/" title="Publications"> Publications </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../people/" title="People"> People </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../research/" title="Research"> Research </a> </li> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-5" id="nav-5" type="checkbox"/> <label class="md-nav__link" for="nav-5"> Courses </label> <nav class="md-nav" data-md-component="collapsible" data-md-level="1"> <label class="md-nav__title" for="nav-5"> Courses </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a class="md-nav__link" href="../PSY5036F2019/" title="PSY5036F2019"> PSY5036F2019 </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../PSY8036SP2019/" title="PSY8036SP2019"> PSY8036SP2019 </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../PSY5038F2018/" title="PSY5038F2018"> PSY5038F2018 </a> </li> <li class="md-nav__item md-nav__item--active"> <input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/> <label class="md-nav__link md-nav__link--active" for="__toc"> PSY8036SP2018 </label> <a class="md-nav__link md-nav__link--active" href="./" title="PSY8036SP2018"> PSY8036SP2018 </a> <nav class="md-nav md-nav--secondary"> <label class="md-nav__title" for="__toc">Table of contents</label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a class="md-nav__link" href="#background"> Background </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#tentative-syllabus"> Tentative Syllabus </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#sample-readings-under-construction"> Sample Readings (under construction) </a> <nav class="md-nav"> <ul class="md-nav__list"> <li class="md-nav__item"> <a class="md-nav__link" href="#background_1"> Background </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#shallow-generative-models-texture-synthesis"> Shallow generative models: Texture synthesis </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#hierarchical-deep-data-driven-generative-models"> Hierarchical (deep) data-driven generative models </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#hypnagogic-imagery"> Hypnagogic imagery </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#dreams"> Dreams </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#hallucinations"> Hallucinations </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#imagery-and-imagination"> Imagery and imagination </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#imagery-and-memory"> Imagery and memory </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" id="nav-6" type="checkbox"/> <label class="md-nav__link" for="nav-6"> Demos </label> <nav class="md-nav" data-md-component="collapsible" data-md-level="1"> <label class="md-nav__title" for="nav-6"> Demos </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a class="md-nav__link" href="../../demos/lightness-shape/" title="Lightness and Shape"> Lightness and Shape </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../demos/motion-surface/" title="Motion and Surface Material"> Motion and Surface Material </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../demos/retinotopy/" title="Retinotopy"> Retinotopy </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../demos/shadows/" title="Shadows"> Shadows </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../demos/transparency/" title="Transparency"> Transparency </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../images/BlojKerstenHurlbertDemo99.pdf" title="Color and Mutual Illumination"> Color and Mutual Illumination </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" id="nav-7" type="checkbox"/> <label class="md-nav__link" for="nav-7"> Data sets </label> <nav class="md-nav" data-md-component="collapsible" data-md-level="1"> <label class="md-nav__title" for="nav-7"> Data sets </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a class="md-nav__link" href="../../datasets/camouflage/camouflage/" title="Camouflage"> Camouflage </a> </li> </ul> </nav> </li> <li class="md-nav__item"> <a class="md-nav__link" href="../../contact/" title="Contact"> Contact </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component="toc"> <div class="md-sidebar__scrollwrap"> <div class="md-sidebar__inner"> <nav class="md-nav md-nav--secondary"> <label class="md-nav__title" for="__toc">Table of contents</label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a class="md-nav__link" href="#background"> Background </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#tentative-syllabus"> Tentative Syllabus </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#sample-readings-under-construction"> Sample Readings (under construction) </a> <nav class="md-nav"> <ul class="md-nav__list"> <li class="md-nav__item"> <a class="md-nav__link" href="#background_1"> Background </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#shallow-generative-models-texture-synthesis"> Shallow generative models: Texture synthesis </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#hierarchical-deep-data-driven-generative-models"> Hierarchical (deep) data-driven generative models </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#hypnagogic-imagery"> Hypnagogic imagery </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#dreams"> Dreams </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#hallucinations"> Hallucinations </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#imagery-and-imagination"> Imagery and imagination </a> </li> <li class="md-nav__item"> <a class="md-nav__link" href="#imagery-and-memory"> Imagery and memory </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-content"> <article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="PSY8036SP2018.pdf" title="PDF Export"></a> <h1 id="data-driven-generative-models-for-perception-dreaming-and-imagining-psy8036sp2018">Data-driven generative models for perception, dreaming, and imagining <small>PSY8036SP2018</small><a class="headerlink" href="#data-driven-generative-models-for-perception-dreaming-and-imagining-psy8036sp2018" title="Permanent link">¶</a></h1> <p><em>University of Minnesota, Spring Semester, 2018</em></p> <p><strong>Topics in Computational Vision</strong><br/> <em>Psy 8036 (Kersten)</em><br/> <em>Psy 5993 Section 034 (Schrater)</em> </p> <p><strong>Instructors:</strong><br/> Dan Kersten <a href="mailto:kersten@umn.edu">kersten@umn.edu</a><br/> Paul Schrater <a href="mailto:schrater@umn.edu">schrater@umn.edu</a> </p> <div class="admonition abstract"> <p class="admonition-title">Abstract</p> <p>It has been proposed that perception is fundamentally a process of “analysis-by-synthesis” in which the sensory input is analyzed bottom-up, with perceptual interpretations tested and refined by top-down predictions of the input, through synthesis. However, while the computational and neural study of the analysis component is well-developed, less is known about the principles and mechanisms that underly synthesis. This seminar will explore recent advances using “deep” learning algorithms to discover hierarchical statistical regularities in large datasets of natural patterns, and the relevance of the learning results to models of human perception and recognition. These algorithms also provide the basis for the stochastic synthesis of novel, yet familiar patterns, which raises the question of whether the human experiences of dreams and hallucinations, and the ability to imagine, reflect the same statistical regularities that are discoverable using machine learning. The class format will include short introductory lectures by the instructors, and weekly student presentations of current literature. The short lectures will provide historical context as well as tutorials on machine learning (e.g. TensorFlow for neural network simulations).</p> </div> <h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">¶</a></h2> <p>There is a long history of theories of perception in which the brain “explains” sensory input in terms of external, behaviorally relevant causes. A current hypothesis is that this process is implemented in part by cortical feedback mechanisms that synthesize predictions of early data representations in order to test how well the brain's current interpretation of the world corresponds with the sensory data. In this view, perception involves a cycle in which the incoming data triggers a set of explanations, i.e. hypotheses, which are used to measure how far the expected sensory input differs from the actual input. From a computational perspective, such generative models of perceptual inference have a number of advantages over strictly bottom-up inference. A generative model can incorporate measures of "goodness-of-fit" to decide whether to accept or reject an interpretation--some explanations are better than others. Discrepancies between sensory data and predictions may also be used to direct attentional resources and signal whether more complex combinations of hypotheses are needed. Further, with sufficient structure, a generative model could provide the basis for the perceptual interpretation of sensory input outside the range of past experience.</p> <p>While computational theories for bottom-up neural mechanisms for perception have received considerable scientific attention, much less is known about top-down mechanisms. This seminar will explore the idea that the brain has hierarchically structured mechanisms that can synthesize patterns of input representations with the following constraints: 1) the mechanisms build on inductive structural biases that are innate; 2) the mechanisms reflect the statistical regularities induced by the physical causes of sensory experience, i.e. they are "data-driven"; 3) the need for cognitive processes to access semantic, perceptual content over levels of abstraction. Assumptions 1) and 2) constrain the class of generative models to be "data-driven", i.e. models that can be learned from sensory data.</p> <p>Recent computational methods for data-driven pattern synthesis (e.g. VAE, InfoGAN, Adversarial Bayes, StackGAN) will be covered in this seminar.  We will also explore the proposal that the same circuitry that may underly feedback in perception is used during imagery, dreams, and hallucinations. </p> <h2 id="tentative-syllabus">Tentative Syllabus<a class="headerlink" href="#tentative-syllabus" title="Permanent link">¶</a></h2> <table> <thead> <tr> <th> Week </th> <th> Topics </th> <th>Background material</th> <th>Discussion topics and papers</th> </tr> </thead> <tbody> <tr> <td>1: Jan 16</td> <td>Background<br/> Models of perception</td> <td>Yuille, A., &amp; Kersten, D. (2006). Vision as Bayesian inference: analysis by synthesis? Trends in Cognitive Sciences, 10(7), 301–308.</td> <td> </td> </tr> <tr> <td>2: Jan 23</td> <td>Overview of machine learning</td> <td>Ackley, D. H., Hinton, G. E., &amp; Sejnowski, T. J. (1985). A learning algorithm for Boltzmann machines. Cognitive Science, 9(1), 147–169.</td> <td> </td> </tr> <tr> <td>3: Jan 30</td> <td>Shallow image models, textures</td> <td>Zhu, S. C., Wu, Y., &amp; Mumford, D. (1998). Filters, random fields and maximum entropy (FRAME): Towards a unified theory for texture modeling. International Journal of Computer Vision, 27(2), 107–126. McDermott, J. H., Schemitsch, M., &amp; Simoncelli, E. P. (2013). Summary statistics in auditory perception. Nature Publishing Group, 16(4), 493–498.</td> <td>   </td> </tr> <tr> <td>4: Feb 6</td> <td>Hierarchical image models, deep learning</td> <td>Zhu, S.-C., &amp; Mumford, D. (2006). Quest for a stochastic grammar of images. Foundations and Trends® in Computer Graphics and Vision, 2(4), 259–362.</td> <td>Topic preview: Visual imagery</td> </tr> <tr> <td>5: Feb 13</td> <td>Hierarchical image models, deep learning</td> <td> </td> <td>Topic preview: Auditory imagery</td> </tr> <tr> <td>6: Feb 20</td> <td>Hierarchical image models, deep learning</td> <td> </td> <td>Topic preview: Hypnagogic imagery</td> </tr> <tr> <td>7: Feb 27</td> <td>Dynamic textures, patterns</td> <td>Xie, J., &amp; Zhu, S. C. (n.d.). Synthesizing Dynamic Patterns by Spatial-Temporal Generative ConvNet. arXiv.org. Vondrick, C., Pirsiavash, H., &amp; Torralba, A. (2016). Generating Videos with Scene Dynamics. Advances in Neural Information Processing Systems NIPS, 613–621.</td> <td>Topic preview: Dreams</td> </tr> <tr> <td>8: Mar 6</td> <td>Visual imagery</td> <td>Christophel, T. B., Klink, P. C., Spitzer, B., Roelfsema, P. R., &amp; Haynes, J.-D. (2017). The Distributed Nature of Working Memory. Trends in Cognitive Sciences, 1–15. Dijkstra, N., Zeidman, P., Ondobaka, S., Gerven, M. A. J., &amp; Friston, K. (2017). Distinct Top-down and Bottom-up Brain Connectivity During Visual Perception and Imagery. Scientific Reports, 1–9.</td> <td>Topic preview: Lucid dreaming</td> </tr> <tr> <td>Mar 13</td> <td>Spring Break</td> <td> </td> <td> </td> </tr> <tr> <td>9: Mar 20</td> <td>Auditory, musical imagery</td> <td>Zatorre, R. J., &amp; Halpern, A. R. (2005). Mental Concerts: Musical Imagery and Auditory Cortex. Neuron, 47(1), 9–12. Riecke, L., A. J. van Opstal, R. Goebel, and E. Formisano. “Hearing Illusory Sounds in Noise: Sensory-Perceptual Transformations in Primary Auditory Cortex.” Journal of Neuroscience 27, no. 46 (November 14, 2007): 12684–89. McDermott, Josh H., and Andrew J. Oxenham. “Spectral Completion of Partially Masked Sounds.” Proceedings of the National Academy of Sciences 105, no. 15 (2008): 5939–5944.</td> <td>Topic overview: Hallucinations &amp; psychedelics</td> </tr> <tr> <td>10: Mar 27</td> <td>Hypnagogic imagery</td> <td>Schacter, D. L. (1976). The hypnagogic state: a critical review of the literature. Psychological Bulletin.</td> <td>Topic preview: Hallucinations &amp; schizophrenia</td> </tr> <tr> <td>11: Apr 3</td> <td>Dreams</td> <td>Stickgold, R., Hobson, J. A., Fosse, R., &amp; Fosse, M. (2001). Sleep, Learning, and Dreams: Off-line Memory Reprocessing. Science, 294(5544), 1052–1057. Crick, F., G. Mitchison., 1983. The function of dream sleep. Nature. Springer</td> <td>Topic preview: Imagination</td> </tr> <tr> <td>12: Apr 10</td> <td>Lucid dreaming</td> <td>Voss, U., Holzmann, R., Tuin, I., , J. A. Hobson., 2009. Lucid dreaming: a state of consciousness with features of both waking and non-lucid dreaming. Sleep.</td> <td> </td> </tr> <tr> <td>13: Apr 17</td> <td>Hallucinations</td> <td>Seriès, P., Reichert, D. P., &amp; Storkey, A. J. (2010). Hallucinations in Charles Bonnet Syndrome Induced by Homeostasis: a Deep Boltzmann Machine Model, 2020–2028.  Ermentrout, G. B., &amp; Cowan, J. D. (1979). A mathematical theory of visual hallucination patterns. Biological Cybernetics, 34(3), 137–150 Howard, R. J., Brammer, M. J., David, A., Woodruff, P., &amp; Williams, S. (1998). The anatomy of conscious vision: an fMRI study of visual hallucinations. Nature neuroscience, 1(8), 738-742.</td> <td> </td> </tr> <tr> <td>14: Apr 24</td> <td>Hallucinations</td> <td>Kumar, S., Sedley, W., Barnes, G. R., Teki, S., Friston, K. J., &amp; Griffiths, T. D. (2014). A brain basis for musical hallucinations. Cortex, 52(C), 86–97</td> <td> </td> </tr> <tr> <td>15: May 1</td> <td>Imagination, art and design</td> <td>Friston, K. J., Lin, M., Frith, C. D., Pezzulo, G., Hobson, J. A., &amp; Ondobaka, S. (2017). Active Inference, Curiosity and Insight. Neural Computation, 29(10), 2633–2683.</td> <td> </td> </tr> <tr> <td>16: May 8</td> <td>Finals week</td> <td> </td> <td>FINAL PROJECT PRESENTATIONS</td> </tr> </tbody> </table> <h2 id="sample-readings-under-construction">Sample Readings (under construction)<a class="headerlink" href="#sample-readings-under-construction" title="Permanent link">¶</a></h2> <h3 id="background_1">Background<a class="headerlink" href="#background_1" title="Permanent link">¶</a></h3> <p>Ackley, D. H., Hinton, G. E., &amp; Sejnowski, T. J. (1985). A learning algorithm for Boltzmann machines. Cognitive Science, 9(1), 147–169.<br/> Bastos, A. M., Usrey, W. M., Adams, R. A., Mangun, G. R., Fries, P., &amp; Friston, K. J. (2012). Canonical Microcircuits for Predictive Coding. Neuron, 76(4), 695–711.<br/> Berkes, P., Orban, G., Lengyel, M., &amp; Fiser, J. (2011). Spontaneous cortical activity reveals hallmarks of an optimal internal model of the environment. Science, 331(6013), 83–87.<br/> Dayan, P., Hinton, G. E., Neal, R. M., &amp; Zemel, R. S. (1995). The Helmholtz Machine. Neural Computation, 7(5), 889–904.<br/> Ouden, den, H. E. M. (2012). How prediction errors shape perception, attention, and motivation, 1–12.<br/> Orban, G., Pietro Berkes, Fiser, J., &amp; Lengyel, M. (2016). Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex. Neuron, 92(2), 530–543.<br/> MacKay, D. M. (1956). Towards an information-flow model of human behaviour. British Journal of Psychology (London, England : 1953), 47(1), 30–43.<br/> Lake, B. M., Salakhutdinov, R., &amp; Tenenbaum, J. B. (2015). Human-level concept learning through probabilistic program induction. Science, 350(6266), 1332–1338. http://doi.org/10.1126/science.aab3050<br/> LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. Nature, 521(7553), 436–444. http://doi.org/10.1038/nature14539<br/> McDermott, Josh H., and Andrew J. Oxenham. “Spectral Completion of Partially Masked Sounds.” Proceedings of the National Academy of Sciences 105, no. 15 (2008): 5939–5944.Mumford, D. (1992). On the computational architecture of the neocortex. Biological Cybernetics, 66(3), 241–251.<br/> Mumford, D. (1994). Pattern theory: a unifying perspective, 187–224.<br/> Rao, R. P. N., &amp; Ballard, D. H. (1999). Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects. Nature Neuroscience, 2, 79–87.<br/> Tu, Z., Chen, X., Yuille, A. L., &amp; Zhu, S.-C. (2005). Image parsing: Unifying segmentation, detection, and recognition. International Journal of Computer Vision, 63(2), 113–140.<br/> Yuille, A., &amp; Kersten, D. (2006). Vision as Bayesian inference: analysis by synthesis? Trends in Cognitive Sciences, 10(7), 301–308.<br/> Richards, W. (1971). The Fortification Illusions of Migraines, Scientific American, 1–10.<br/> Zhu, S.-C., &amp; Mumford, D. (2006). Quest for a stochastic grammar of images. Foundations and Trends® in Computer Graphics and Vision, 2(4), 259–362. http://doi.org/10.1561/0600000018</p> <h3 id="shallow-generative-models-texture-synthesis">Shallow generative models: Texture synthesis<a class="headerlink" href="#shallow-generative-models-texture-synthesis" title="Permanent link">¶</a></h3> <p>Freeman, J., &amp; Simoncelli, E. P. (2011). Metamers of the ventral stream. Nature Publishing Group, 14(9), 1195–1201. http://doi.org/10.1038/nn.2889<br/> McDermott, J. H., Schemitsch, M., &amp; Simoncelli, E. P. (2013). Summary statistics in auditory perception. Nature Publishing Group, 16(4), 493–498.<br/> McDermott, J. H., &amp; Simoncelli, E. P. (2011). Sound Texture Perception via Statistics of the Auditory Periphery: Evidence from Sound Synthesis. Neuron, 71(5), 926–940.<br/> Zhu, S. C., Wu, Y., &amp; Mumford, D. (1998). Filters, random fields and maximum entropy (FRAME): Towards a unified theory for texture modeling. International Journal of Computer Vision, 27(2), 107–126.</p> <h3 id="hierarchical-deep-data-driven-generative-models">Hierarchical (deep) data-driven generative models<a class="headerlink" href="#hierarchical-deep-data-driven-generative-models" title="Permanent link">¶</a></h3> <p>Chen, X., Chen, X., Duan, Y., Houthooft, R., Schulman, J., Sutskever, I., &amp; Abbeel, P. (2016). InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets, 2172–2180.<br/> Goodfellow, I. (2016, December 31). NIPS 2016 Tutorial: Generative Adversarial Networks.<br/> Kulkarni, T. D., Whitney, W. F., Kohli, P., &amp; Tenenbaum, J. (2015). Deep Convolutional Inverse Graphics Network, 2539–2547.<br/> Rock, J., Issaranon, T., Deshpande, A., &amp; Forsyth, D. (2016, December 5). Authoring image decompositions with generative models.<br/> Varol, G., Romero, J., Martin, X., Mahmood, N., Black, M. J., Laptev, I., &amp; Schmid, C. (2017, January 5). Learning from Synthetic Humans.<br/> Xie, J., Zhu, S.-C., &amp; Wu, Y. N. (2016, June 3). Synthesizing Dynamic Patterns by Spatial-Temporal Generative ConvNet.<br/> Yosinski, J., Clune, J., Nguyen, A., Fuchs, T., &amp; Lipson, H. (2015, June 22). Understanding Neural Networks Through Deep Visualization.<br/> Zhang, H., Xu, T., Li, H., Zhang, S., Wang, X., Huang, X., &amp; Metaxas, D. (2016, December 10). StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks.</p> <h3 id="hypnagogic-imagery">Hypnagogic imagery<a class="headerlink" href="#hypnagogic-imagery" title="Permanent link">¶</a></h3> <p>Gurstelle, E. B., &amp; de Oliveira, J. L. (2004). Daytime parahypnagogia: a state of consciousness that occurs when we almost fall asleep. Medical Hypotheses, 62(2), 166–168. http://doi.org/10.1016/S0306-9877(03)00306-2<br/> Holmes, E. A., James, E. L., Coode-Bate, T., &amp; Deeprose, C. (2009). Can Playing the Computer Game “Tetris” Reduce the Build-Up of Flashbacks for Trauma? A Proposal from Cognitive Science. PLoS ONE, 4(1), e4153. http://doi.org/10.1371/journal.pone.0004153.t004<br/> Nielsen, T. A. (1995). Describing and modeling hypnagogic imagery using a systematic self-observation procedure. Dreaming, 5(2), 75–94. http://doi.org/10.1037/h0094426<br/> Nielsen, T. A. (2016). A Self-Observational Study of Spontaneous Hypnagogic Imagery Using the Upright Napping Procedure. Imagination, Cognition and Personality, 11(4), 353–366. http://doi.org/10.2190/3LVV-L5GY-UR5V-N0TG<br/> *Schacter, D. L. (1976). The hypnagogic state: a critical review of the literature. Psychological Bulletin.<br/> Stickgold, R. (2000). Replaying the Game: Hypnagogic Images in Normals and Amnesics. Science, 290(5490), 350–353. http://doi.org/10.1126/science.290.5490.350</p> <h3 id="dreams">Dreams<a class="headerlink" href="#dreams" title="Permanent link">¶</a></h3> <p>Band, J. C. Z. F. A., 2016. (n.d.). Animal “Hypnosis” and Waking Nightmares. Anomalistik.De<br/> Crick, F., G. Mitchison., 1983. The function of dream sleep. Nature. Springer<br/> *Hobson, J. A., &amp; Mccarley, R. W. (197.). The brain as a dream state generator: an activation-synthesis hypothesis of the dream process. The American Journal of Psychiatry.<br/> Dresler, M., Koch, S. P., Wehrle, R., Spoormaker, V. I., Holsboer, F., Steiger, A., et al. (2011). Dreamed Movement Elicits Activation in the Sensorimotor Cortex. Current Biology : CB.<br/> Stickgold, R., Hobson, J. A., Fosse, R., &amp; Fosse, M. (2001). Sleep, Learning, and Dreams: Off-line Memory Reprocessing. Science, 294(5544), 1052–1057. http://doi.org/10.1126/science.1063530<br/> Stickgold, R. (2005). Sleep-dependent memory consolidation. Nature, 437(7063), 1272–1278. http://doi.org/10.1038/nature04286<br/> Studies, J. H. J. O. C., 2014. (n.d.). Consciousness, dreams, and inference: the cartesian theatre revisited. Ingentaconnect.com </p> <h3 id="hallucinations">Hallucinations<a class="headerlink" href="#hallucinations" title="Permanent link">¶</a></h3> <p>Bressloff, P. C., Cowan, J. D., Golubitsky, M., Thomas, P. J., &amp; Wiener, M. C. (2002). What geometric visual hallucinations tell us about the visual cortex. Neural Computation, 14(3), 473–491. http://doi.org/10.1162/089976602317250861<br/> Cummings, J. L., &amp; Miller, B. L. (1987). Visual hallucinations. Clinical occurrence and use in differential diagnosis. The Western Journal of Medicine, 146(1), 46–51.<br/> *Ermentrout, G. B., &amp; Cowan, J. D. (1979). A mathematical theory of visual hallucination patterns. Biological Cybernetics, 34(3), 137–150. http://doi.org/10.1007/BF00336965<br/> Merabet, L. B., Maguire, D., Warde, A., Alterescu, K., Stickgold, R., &amp; Pascual-Leone, A. (2004). Visual hallucinations during prolonged blindfolding in sighted subjects. Journal of Neuro-Ophthalmology, 24(2), 109–113.<br/> Howard, R. J., Brammer, M. J., David, A., Woodruff, P., &amp; Williams, S. (1998). The anatomy of conscious vision: an fMRI study of visual hallucinations. Nature neuroscience, 1(8), 738-742.Seriès, P., Reichert, D. P., &amp; Storkey, A. J. (2010). Hallucinations in Charles Bonnet Syndrome Induced by Homeostasis: a Deep Boltzmann Machine Model, 2020–2028.<br/> Silverstein, S. M. (2016). Visual Perception Disturbances in Schizophrenia: A Unified Model. In The Neuropsychopathology of Schizophrenia: Molecules, Brain Systems, Motivation, and Cognition (3<sup>rd</sup> ed., Vol. 63, pp. 77–132). Cham: Springer International Publishing. http://doi.org/10.1007/978-3-319-30596-7_4<br/> Kumar, S., Sedley, W., Barnes, G. R., Teki, S., Friston, K. J., &amp; Griffiths, T. D. (2014). A brain basis for musical hallucinations. Cortex, 52(C), 86–97. http://doi.org/10.1016/j.cortex.2013.12.002</p> <h3 id="imagery-and-imagination">Imagery and imagination<a class="headerlink" href="#imagery-and-imagination" title="Permanent link">¶</a></h3> <p>Chetverikov, A., &amp; Kristjánsson, Á. (2016). On the joys of perceiving: Affect as feedback for perceptual predictions. Actpsy, 169(C), 1–10. http://doi.org/10.1016/j.actpsy.2016.05.005<br/> Dijkstra, N., Zeidman, P., Ondobaka, S., Gerven, M. A. J., &amp; Friston, K. (2017). Distinct Top-down and Bottom-up Brain Connectivity During Visual Perception and Imagery. Scientific Reports, 1–9. http://doi.org/10.1038/s41598-017-05888-8<br/> Friston, K. J., Lin, M., Frith, C. D., Pezzulo, G., Hobson, J. A., &amp; Ondobaka, S. (2017). Active Inference, Curiosity and Insight. Neural Computation, 29(10), 2633–2683. http://doi.org/10.1162/neco_a_00999<br/> Kosslyn, S. M., &amp; Thompson, W. L. (2003). When is early visual cortex activated during visual mental imagery? Psychological Bulletin, 129(5), 723–746. http://doi.org/10.1037/0033-2909.129.5.723<br/> Kosslyn, S. M., Alpert, N. M., Thompson, W. L., Maljkovic, V., Weise, S. B., Chabris, C. F., et al. (1993). Visual Mental Imagery Activates Topographically Organized Visual Cortex: PET Investigations. Journal of Cognitive Neuroscience, 5(3), 263–287. http://doi.org/10.1162/jocn.1993.5.3.263<br/> Kosslyn, S., &amp; Ganis, G. (2000). Neural foundations of imagery. Nature Reviews ….<br/> Pearson, J., Naselaris, T., Holmes, E. A., &amp; Kosslyn, S. M. (2015). Mental Imagery: Functional Mechanisms and Clinical Applications. Trends in Cognitive Sciences, 19(10), 590–602. http://doi.org/10.1016/j.tics.2015.08.003<br/> Riecke, L., A. J. van Opstal, R. Goebel, and E. Formisano. “Hearing Illusory Sounds in Noise: Sensory-Perceptual Transformations in Primary Auditory Cortex.” Journal of Neuroscience 27, no. 46 (November 14, 2007): 12684–89. https://doi.org/10.1523/JNEUROSCI.2713-07.2007.<br/> Schacter, D. L., Addis, D. R., Hassabis, D., Martin, V. C., Spreng, R. N., &amp; Szpunar, K. K. (2012). The Future of Memory: Remembering, Imagining, and the Brain. Neuron, 76(4), 677–694. http://doi.org/10.1016/j.neuron.2012.11.001<br/> Zatorre, R. J., &amp; Halpern, A. R. (2005). Mental Concerts: Musical Imagery and Auditory Cortex. Neuron, 47(1), 9–12. http://doi.org/10.1016/j.neuron.2005.06.013</p> <h3 id="imagery-and-memory">Imagery and memory<a class="headerlink" href="#imagery-and-memory" title="Permanent link">¶</a></h3> <p>Albers, A. M., Kok, P., Toni, I., Dijkerman, H. C., &amp; de Lange, F. P. (2013). Shared Representations for Working Memory and Mental Imagery in Early Visual Cortex. Curbio, 23(15), 1427–1431. http://doi.org/10.1016/j.cub.2013.05.065<br/> Christophel, T. B., Klink, P. C., Spitzer, B., Roelfsema, P. R., &amp; Haynes, J.-D. (2017). The Distributed Nature of Working Memory. Trends in Cognitive Sciences, 1–15. http://doi.org/10.1016/j.tics.2016.12.007<br/> Naselaris, T., Olman, C. A., Stansbury, D. E., Ugurbil, K., &amp; Gallant, J. L. (2015). A voxel-wise encoding model for early visual areas decodes mental images of remembered scenes. NeuroImage, 105(C), 215–228. http://doi.org/10.1016/j.neuroimage.2014.10.018<br/> Self, M. W., van Kerkoerle, T., &amp; Roelfsema, P. R. (2016). Layer-specificity in the effects of attention and working memory on activity in primary visual cortex. Nature Communications, 8, 1–12. http://doi.org/10.1038/ncomms13804<br/> Stickgold, R. (2005). Sleep-dependent memory consolidation. Nature, 437(7063), 1272–1278. http://doi.org/10.1038/nature04286</p> </article> </div> </div> </main> <footer class="md-footer"> <div class="md-footer-nav"> <nav class="md-footer-nav__inner md-grid"> <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../PSY5038F2018/" rel="prev" title="PSY5038F2018"> <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i> </div> <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class="md-flex__ellipsis"> <span class="md-footer-nav__direction"> Previous </span> PSY5038F2018 </span> </div> </a> <a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../../demos/lightness-shape/" rel="next" title="Lightness and Shape"> <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class="md-flex__ellipsis"> <span class="md-footer-nav__direction"> Next </span> Lightness and Shape </span> </div> <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i> </div> </a> </nav> </div> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class="md-footer-copyright"> <div class="md-footer-copyright__highlight"> © 2020 Regents of the University of Minnesota. All rights reserved. The University of Minnesota is an equal opportunity educator and employer. <br/> <a href="http://privacy.umn.edu">Privacy Statement</a> </div> </div> <div class="md-footer-social"> <link href="../../assets/fonts/font-awesome.css" rel="stylesheet"/> <a class="md-footer-social__link fa fa-google" href="https://scholar.google.com/citations?user=6j1ZjJsAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener" target="_blank" title="google"></a> <a class="md-footer-social__link fa fa-github" href="https://github.com/kerstenlab" rel="noopener" target="_blank" title="github"></a> </div> </div> </div> </footer> </div> <script src="../../assets/javascripts/application.f906c412.js"></script> <script>app.initialize({version:"1.1",url:{base:"../.."}})</script> </body> </html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="The Computational Vision Lab combines computational theory with behavioral and brain image experiments to understand how we see the world around us." name="description"/>
+<meta content="Daniel Kersten" name="author"/>
+<link href="https://kerstenlab.psych.umn.edu/courses/PSY8036SP2018/" rel="canonical"/>
+<link href="../../imgs/blockm.ico" rel="icon"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-8.1.10" name="generator"/>
+<title>PSY8036SP2018 - Computational Vision Lab</title>
+<link href="../../assets/stylesheets/main.d6be258b.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7C&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Open Sans";--md-code-font:""}</style>
+<link href="../../stylesheets/color.css" rel="stylesheet"/>
+<link href="../../stylesheets/admonition.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="umn" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#data-driven-generative-models-for-perception-dreaming-and-imagining-psy8036sp2018">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Computational Vision Lab" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Computational Vision Lab">
+<img alt="logo" src="../../imgs/blockm.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Computational Vision Lab
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              PSY8036SP2018
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="umn" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Computational Vision Lab" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Computational Vision Lab">
+<img alt="logo" src="../../imgs/blockm.svg"/>
+</a>
+    Computational Vision Lab
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../publications/">
+        Publications
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../people/">
+        People
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/">
+        Research
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Courses
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Courses" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Courses
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../PSY5036F2019/">
+        PSY5036F2019
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../PSY8036SP2019/">
+        PSY8036SP2019
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../PSY5038F2018/">
+        PSY5038F2018
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          PSY8036SP2018
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        PSY8036SP2018
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background">
+    Background
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tentative-syllabus">
+    Tentative Syllabus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sample-readings-under-construction">
+    Sample Readings (under construction)
+  </a>
+<nav aria-label="Sample Readings (under construction)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background_1">
+    Background
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shallow-generative-models-texture-synthesis">
+    Shallow generative models: Texture synthesis
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hierarchical-deep-data-driven-generative-models">
+    Hierarchical (deep) data-driven generative models
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hypnagogic-imagery">
+    Hypnagogic imagery
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dreams">
+    Dreams
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hallucinations">
+    Hallucinations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#imagery-and-imagination">
+    Imagery and imagination
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#imagery-and-memory">
+    Imagery and memory
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../PSY8036SP2021.md">
+        PSY8036SP2021
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-state="indeterminate" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+          Demos
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Demos" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Demos
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../demos/lightness-shape/">
+        Lightness and Shape
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../demos/motion-surface/">
+        Motion and Surface Material
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../demos/retinotopy/">
+        Retinotopy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../demos/shadows/">
+        Shadows
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../demos/transparency/">
+        Transparency
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../images/BlojKerstenHurlbertDemo99.pdf">
+        Color and Mutual Illumination
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-state="indeterminate" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          Data sets
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data sets" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Data sets
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../datasets/camouflage/camouflage/">
+        Camouflage
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../contact/">
+        Contact
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background">
+    Background
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tentative-syllabus">
+    Tentative Syllabus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sample-readings-under-construction">
+    Sample Readings (under construction)
+  </a>
+<nav aria-label="Sample Readings (under construction)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background_1">
+    Background
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shallow-generative-models-texture-synthesis">
+    Shallow generative models: Texture synthesis
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hierarchical-deep-data-driven-generative-models">
+    Hierarchical (deep) data-driven generative models
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hypnagogic-imagery">
+    Hypnagogic imagery
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dreams">
+    Dreams
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hallucinations">
+    Hallucinations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#imagery-and-imagination">
+    Imagery and imagination
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#imagery-and-memory">
+    Imagery and memory
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="data-driven-generative-models-for-perception-dreaming-and-imagining-psy8036sp2018">Data-driven generative models for perception, dreaming, and imagining <small>PSY8036SP2018</small><a class="headerlink" href="#data-driven-generative-models-for-perception-dreaming-and-imagining-psy8036sp2018" title="Permanent link">#</a></h1>
+<p><em>University of Minnesota, Spring Semester, 2018</em></p>
+<p><strong>Topics in Computational Vision</strong><br/>
+<em>Psy 8036 (Kersten)</em><br/>
+<em>Psy 5993 Section 034 (Schrater)</em> </p>
+<p><strong>Instructors:</strong><br/>
+Dan Kersten <a href="mailto:kersten@umn.edu">kersten@umn.edu</a><br/>
+Paul Schrater <a href="mailto:schrater@umn.edu">schrater@umn.edu</a> </p>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>It has been proposed that perception is fundamentally a process of “analysis-by-synthesis” in which the sensory input is analyzed bottom-up, with perceptual interpretations tested and refined by top-down predictions of the input, through synthesis. However, while the computational and neural study of the analysis component is well-developed, less is known about the principles and mechanisms that underly synthesis. This seminar will explore recent advances using “deep” learning algorithms to discover hierarchical statistical regularities in large datasets of natural patterns, and the relevance of the learning results to models of human perception and recognition. These algorithms also provide the basis for the stochastic synthesis of novel, yet familiar patterns, which raises the question of whether the human experiences of dreams and hallucinations, and the ability to imagine, reflect the same statistical regularities that are discoverable using machine learning. The class format will include short introductory lectures by the instructors, and weekly student presentations of current literature. The short lectures will provide historical context as well as tutorials on machine learning (e.g. TensorFlow for neural network simulations).</p>
+</div>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">#</a></h2>
+<p>There is a long history of theories of perception in which the brain
+“explains” sensory input in terms of external, behaviorally relevant
+causes. A current hypothesis is that this process is implemented in part
+by cortical feedback mechanisms that synthesize predictions of early
+data representations in order to test how well the brain's current
+interpretation of the world corresponds with the sensory data. In this
+view, perception involves a cycle in which the incoming data triggers a
+set of explanations, i.e. hypotheses, which are used to measure how far
+the expected sensory input differs from the actual input. From a
+computational perspective, such generative models of perceptual
+inference have a number of advantages over strictly bottom-up inference.
+A generative model can incorporate measures of "goodness-of-fit" to
+decide whether to accept or reject an interpretation--some explanations
+are better than others. Discrepancies between sensory data and
+predictions may also be used to direct attentional resources and signal
+whether more complex combinations of hypotheses are needed. Further,
+with sufficient structure, a generative model could provide the basis
+for the perceptual interpretation of sensory input outside the range of
+past experience.</p>
+<p>While computational theories for bottom-up neural mechanisms for
+perception have received considerable scientific attention, much less
+is known about top-down mechanisms. This seminar will explore the idea
+that the brain has hierarchically structured mechanisms that can
+synthesize patterns of input representations with the following
+constraints: 1) the mechanisms build on inductive structural biases that
+are innate; 2) the mechanisms reflect the statistical regularities
+induced by the physical causes of sensory experience, i.e. they are
+"data-driven"; 3) the need for cognitive processes to access semantic,
+perceptual content over levels of abstraction. Assumptions 1) and 2)
+constrain the class of generative models to be "data-driven", i.e.
+models that can be learned from sensory data.</p>
+<p>Recent computational methods for data-driven pattern synthesis (e.g.
+VAE, InfoGAN, Adversarial Bayes, StackGAN) will be covered in this
+seminar.  We will also explore the proposal that the same circuitry that
+may underly feedback in perception is used during imagery, dreams, and
+hallucinations.  </p>
+<h2 id="tentative-syllabus">Tentative Syllabus<a class="headerlink" href="#tentative-syllabus" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>
+Week
+</th>
+<th>
+Topics
+</th>
+<th>Background material</th>
+<th>Discussion topics and papers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1: Jan 16</td>
+<td>Background<br/>
+Models of perception</td>
+<td>Yuille, A., &amp; Kersten, D. (2006). Vision as Bayesian inference: analysis by synthesis? Trends in Cognitive Sciences, 10(7), 301–308.</td>
+<td> </td>
+</tr>
+<tr>
+<td>2: Jan 23</td>
+<td>Overview of machine learning</td>
+<td>Ackley, D. H., Hinton, G. E., &amp; Sejnowski, T. J. (1985). A learning algorithm for Boltzmann machines. Cognitive Science, 9(1), 147–169.</td>
+<td> </td>
+</tr>
+<tr>
+<td>3: Jan 30</td>
+<td>Shallow image models, textures</td>
+<td>Zhu, S. C., Wu, Y., &amp; Mumford, D. (1998). Filters, random fields and maximum entropy (FRAME): Towards a unified theory for texture modeling. International Journal of Computer Vision, 27(2), 107–126.
+McDermott, J. H., Schemitsch, M., &amp; Simoncelli, E. P. (2013). Summary statistics in auditory perception. Nature Publishing Group, 16(4), 493–498.</td>
+<td> 
+ </td>
+</tr>
+<tr>
+<td>4: Feb 6</td>
+<td>Hierarchical image models, deep learning</td>
+<td>Zhu, S.-C., &amp; Mumford, D. (2006). Quest for a stochastic grammar of images. Foundations and Trends® in Computer Graphics and Vision, 2(4), 259–362.</td>
+<td>Topic preview: Visual imagery</td>
+</tr>
+<tr>
+<td>5: Feb 13</td>
+<td>Hierarchical image models, deep learning</td>
+<td> </td>
+<td>Topic preview: Auditory imagery</td>
+</tr>
+<tr>
+<td>6: Feb 20</td>
+<td>Hierarchical image models, deep learning</td>
+<td> </td>
+<td>Topic preview: Hypnagogic imagery</td>
+</tr>
+<tr>
+<td>7: Feb 27</td>
+<td>Dynamic textures, patterns</td>
+<td>Xie, J., &amp; Zhu, S. C. (n.d.). Synthesizing Dynamic Patterns by Spatial-Temporal Generative ConvNet. arXiv.org.
+Vondrick, C., Pirsiavash, H., &amp; Torralba, A. (2016). Generating Videos with Scene Dynamics. Advances in Neural Information Processing Systems NIPS, 613–621.</td>
+<td>Topic preview: Dreams</td>
+</tr>
+<tr>
+<td>8: Mar 6</td>
+<td>Visual imagery</td>
+<td>Christophel, T. B., Klink, P. C., Spitzer, B., Roelfsema, P. R., &amp; Haynes, J.-D. (2017). The Distributed Nature of Working Memory. Trends in Cognitive Sciences, 1–15.
+Dijkstra, N., Zeidman, P., Ondobaka, S., Gerven, M. A. J., &amp; Friston, K. (2017). Distinct Top-down and Bottom-up Brain Connectivity During Visual Perception and Imagery. Scientific Reports, 1–9.</td>
+<td>Topic preview: Lucid dreaming</td>
+</tr>
+<tr>
+<td>Mar 13</td>
+<td>Spring Break</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>9: Mar 20</td>
+<td>Auditory, musical imagery</td>
+<td>Zatorre, R. J., &amp; Halpern, A. R. (2005). Mental Concerts: Musical Imagery and Auditory Cortex. Neuron, 47(1), 9–12.
+Riecke, L., A. J. van Opstal, R. Goebel, and E. Formisano. “Hearing Illusory Sounds in Noise: Sensory-Perceptual Transformations in Primary Auditory Cortex.” Journal of Neuroscience 27, no. 46 (November 14, 2007): 12684–89.
+McDermott, Josh H., and Andrew J. Oxenham. “Spectral Completion of Partially Masked Sounds.” Proceedings of the National Academy of Sciences 105, no. 15 (2008): 5939–5944.</td>
+<td>Topic overview: Hallucinations &amp; psychedelics</td>
+</tr>
+<tr>
+<td>10: Mar 27</td>
+<td>Hypnagogic imagery</td>
+<td>Schacter, D. L. (1976). The hypnagogic state: a critical review of the literature. Psychological Bulletin.</td>
+<td>Topic preview: Hallucinations &amp; schizophrenia</td>
+</tr>
+<tr>
+<td>11: Apr 3</td>
+<td>Dreams</td>
+<td>Stickgold, R., Hobson, J. A., Fosse, R., &amp; Fosse, M. (2001). Sleep, Learning, and Dreams: Off-line Memory Reprocessing. Science, 294(5544), 1052–1057.
+Crick, F., G. Mitchison., 1983. The function of dream sleep. Nature. Springer</td>
+<td>Topic preview: Imagination</td>
+</tr>
+<tr>
+<td>12: Apr 10</td>
+<td>Lucid dreaming</td>
+<td>Voss, U., Holzmann, R., Tuin, I., , J. A. Hobson., 2009. Lucid dreaming: a state of consciousness with features of both waking and non-lucid dreaming. Sleep.</td>
+<td> </td>
+</tr>
+<tr>
+<td>13: Apr 17</td>
+<td>Hallucinations</td>
+<td>Seriès, P., Reichert, D. P., &amp; Storkey, A. J. (2010). Hallucinations in Charles Bonnet Syndrome Induced by Homeostasis: a Deep Boltzmann Machine Model, 2020–2028. 
+Ermentrout, G. B., &amp; Cowan, J. D. (1979). A mathematical theory of visual hallucination patterns. Biological Cybernetics, 34(3), 137–150
+Howard, R. J., Brammer, M. J., David, A., Woodruff, P., &amp; Williams, S. (1998). The anatomy of conscious vision: an fMRI study of visual hallucinations. Nature neuroscience, 1(8), 738-742.</td>
+<td> </td>
+</tr>
+<tr>
+<td>14: Apr 24</td>
+<td>Hallucinations</td>
+<td>Kumar, S., Sedley, W., Barnes, G. R., Teki, S., Friston, K. J., &amp; Griffiths, T. D. (2014). A brain basis for musical hallucinations. Cortex, 52(C), 86–97</td>
+<td> </td>
+</tr>
+<tr>
+<td>15: May 1</td>
+<td>Imagination, art and design</td>
+<td>Friston, K. J., Lin, M., Frith, C. D., Pezzulo, G., Hobson, J. A., &amp; Ondobaka, S. (2017). Active Inference, Curiosity and Insight. Neural Computation, 29(10), 2633–2683.</td>
+<td> </td>
+</tr>
+<tr>
+<td>16: May 8</td>
+<td>Finals week</td>
+<td> </td>
+<td>FINAL PROJECT PRESENTATIONS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-readings-under-construction">Sample Readings (under construction)<a class="headerlink" href="#sample-readings-under-construction" title="Permanent link">#</a></h2>
+<h3 id="background_1">Background<a class="headerlink" href="#background_1" title="Permanent link">#</a></h3>
+<p>Ackley, D. H., Hinton, G. E., &amp; Sejnowski, T. J. (1985). A learning
+algorithm for Boltzmann machines. Cognitive Science, 9(1), 147–169.<br/>
+Bastos, A. M., Usrey, W. M., Adams, R. A., Mangun, G. R., Fries, P., &amp;
+Friston, K. J. (2012). Canonical Microcircuits for Predictive Coding.
+Neuron, 76(4), 695–711.<br/>
+Berkes, P., Orban, G., Lengyel, M., &amp; Fiser, J. (2011). Spontaneous
+cortical activity reveals hallmarks of an optimal internal model of the
+environment. Science, 331(6013), 83–87.<br/>
+Dayan, P., Hinton, G. E., Neal, R. M., &amp; Zemel, R. S. (1995). The
+Helmholtz Machine. Neural Computation, 7(5), 889–904.<br/>
+Ouden, den, H. E. M. (2012). How prediction errors shape perception,
+attention, and motivation, 1–12.<br/>
+Orban, G., Pietro Berkes, Fiser, J., &amp; Lengyel, M. (2016). Neural
+Variability and Sampling-Based Probabilistic Representations in the
+Visual Cortex. Neuron, 92(2), 530–543.<br/>
+MacKay, D. M. (1956). Towards an information-flow model of human
+behaviour. British Journal of Psychology (London, England : 1953),
+47(1), 30–43.<br/>
+Lake, B. M., Salakhutdinov, R., &amp; Tenenbaum, J. B. (2015). Human-level
+concept learning through probabilistic program induction. Science,
+350(6266), 1332–1338. http://doi.org/10.1126/science.aab3050<br/>
+LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. Nature,
+521(7553), 436–444. http://doi.org/10.1038/nature14539<br/>
+McDermott, Josh H., and Andrew J. Oxenham. “Spectral Completion of
+Partially Masked Sounds.” Proceedings of the National Academy of
+Sciences 105, no. 15 (2008): 5939–5944.Mumford, D. (1992). On the
+computational architecture of the neocortex. Biological Cybernetics,
+66(3), 241–251.<br/>
+Mumford, D. (1994). Pattern theory: a unifying perspective, 187–224.<br/>
+Rao, R. P. N., &amp; Ballard, D. H. (1999). Predictive coding in the visual
+cortex: a functional interpretation of some extra-classical
+receptive-field effects. Nature Neuroscience, 2, 79–87.<br/>
+Tu, Z., Chen, X., Yuille, A. L., &amp; Zhu, S.-C. (2005). Image parsing:
+Unifying segmentation, detection, and recognition. International Journal
+of Computer Vision, 63(2), 113–140.<br/>
+Yuille, A., &amp; Kersten, D. (2006). Vision as Bayesian inference: analysis
+by synthesis? Trends in Cognitive Sciences, 10(7), 301–308.<br/>
+Richards, W. (1971). The Fortification Illusions of Migraines,
+Scientific American, 1–10.<br/>
+Zhu, S.-C., &amp; Mumford, D. (2006). Quest for a stochastic grammar of
+images. Foundations and Trends® in Computer Graphics and Vision, 2(4),
+259–362. http://doi.org/10.1561/0600000018</p>
+<h3 id="shallow-generative-models-texture-synthesis">Shallow generative models: Texture synthesis<a class="headerlink" href="#shallow-generative-models-texture-synthesis" title="Permanent link">#</a></h3>
+<p>Freeman, J., &amp; Simoncelli, E. P. (2011). Metamers of the ventral stream.
+Nature Publishing Group, 14(9), 1195–1201.
+http://doi.org/10.1038/nn.2889<br/>
+McDermott, J. H., Schemitsch, M., &amp; Simoncelli, E. P. (2013). Summary
+statistics in auditory perception. Nature Publishing Group, 16(4),
+493–498.<br/>
+McDermott, J. H., &amp; Simoncelli, E. P. (2011). Sound Texture Perception
+via Statistics of the Auditory Periphery: Evidence from Sound Synthesis.
+Neuron, 71(5), 926–940.<br/>
+Zhu, S. C., Wu, Y., &amp; Mumford, D. (1998). Filters, random fields and
+maximum entropy (FRAME): Towards a unified theory for texture modeling.
+International Journal of Computer Vision, 27(2), 107–126.</p>
+<h3 id="hierarchical-deep-data-driven-generative-models">Hierarchical (deep) data-driven generative models<a class="headerlink" href="#hierarchical-deep-data-driven-generative-models" title="Permanent link">#</a></h3>
+<p>Chen, X., Chen, X., Duan, Y., Houthooft, R., Schulman, J., Sutskever,
+I., &amp; Abbeel, P. (2016). InfoGAN: Interpretable Representation Learning
+by Information Maximizing Generative Adversarial Nets, 2172–2180.<br/>
+Goodfellow, I. (2016, December 31). NIPS 2016 Tutorial: Generative
+Adversarial Networks.<br/>
+Kulkarni, T. D., Whitney, W. F., Kohli, P., &amp; Tenenbaum, J. (2015). Deep
+Convolutional Inverse Graphics Network, 2539–2547.<br/>
+Rock, J., Issaranon, T., Deshpande, A., &amp; Forsyth, D. (2016, December
+5). Authoring image decompositions with generative models.<br/>
+Varol, G., Romero, J., Martin, X., Mahmood, N., Black, M. J., Laptev,
+I., &amp; Schmid, C. (2017, January 5). Learning from Synthetic Humans.<br/>
+Xie, J., Zhu, S.-C., &amp; Wu, Y. N. (2016, June 3). Synthesizing Dynamic
+Patterns by Spatial-Temporal Generative ConvNet.<br/>
+Yosinski, J., Clune, J., Nguyen, A., Fuchs, T., &amp; Lipson, H. (2015, June
+22). Understanding Neural Networks Through Deep Visualization.<br/>
+Zhang, H., Xu, T., Li, H., Zhang, S., Wang, X., Huang, X., &amp; Metaxas, D.
+(2016, December 10). StackGAN: Text to Photo-realistic Image Synthesis
+with Stacked Generative Adversarial Networks.</p>
+<h3 id="hypnagogic-imagery">Hypnagogic imagery<a class="headerlink" href="#hypnagogic-imagery" title="Permanent link">#</a></h3>
+<p>Gurstelle, E. B., &amp; de Oliveira, J. L. (2004). Daytime parahypnagogia: a
+state of consciousness that occurs when we almost fall asleep. Medical
+Hypotheses, 62(2), 166–168.
+http://doi.org/10.1016/S0306-9877(03)00306-2<br/>
+Holmes, E. A., James, E. L., Coode-Bate, T., &amp; Deeprose, C. (2009). Can
+Playing the Computer Game “Tetris” Reduce the Build-Up of Flashbacks for
+Trauma? A Proposal from Cognitive Science. PLoS ONE, 4(1), e4153.
+http://doi.org/10.1371/journal.pone.0004153.t004<br/>
+Nielsen, T. A. (1995). Describing and modeling hypnagogic imagery using
+a systematic self-observation procedure. Dreaming, 5(2), 75–94.
+http://doi.org/10.1037/h0094426<br/>
+Nielsen, T. A. (2016). A Self-Observational Study of Spontaneous
+Hypnagogic Imagery Using the Upright Napping Procedure. Imagination,
+Cognition and Personality, 11(4), 353–366.
+http://doi.org/10.2190/3LVV-L5GY-UR5V-N0TG<br/>
+*Schacter, D. L. (1976). The hypnagogic state: a critical review of the
+literature. Psychological Bulletin.<br/>
+Stickgold, R. (2000). Replaying the Game: Hypnagogic Images in Normals
+and Amnesics. Science, 290(5490), 350–353.
+http://doi.org/10.1126/science.290.5490.350</p>
+<h3 id="dreams">Dreams<a class="headerlink" href="#dreams" title="Permanent link">#</a></h3>
+<p>Band, J. C. Z. F. A., 2016. (n.d.). Animal “Hypnosis” and Waking
+Nightmares. Anomalistik.De<br/>
+Crick, F., G. Mitchison., 1983. The function of dream sleep. Nature.
+Springer<br/>
+*Hobson, J. A., &amp; Mccarley, R. W. (197.). The brain as a dream state
+generator: an activation-synthesis hypothesis of the dream process. The
+American Journal of Psychiatry.<br/>
+Dresler, M., Koch, S. P., Wehrle, R., Spoormaker, V. I., Holsboer, F.,
+Steiger, A., et al. (2011). Dreamed Movement Elicits Activation in the
+Sensorimotor Cortex. Current Biology : CB.<br/>
+Stickgold, R., Hobson, J. A., Fosse, R., &amp; Fosse, M. (2001). Sleep,
+Learning, and Dreams: Off-line Memory Reprocessing. Science, 294(5544),
+1052–1057. http://doi.org/10.1126/science.1063530<br/>
+Stickgold, R. (2005). Sleep-dependent memory consolidation. Nature,
+437(7063), 1272–1278. http://doi.org/10.1038/nature04286<br/>
+Studies, J. H. J. O. C., 2014. (n.d.). Consciousness, dreams, and
+inference: the cartesian theatre revisited. Ingentaconnect.com  </p>
+<h3 id="hallucinations">Hallucinations<a class="headerlink" href="#hallucinations" title="Permanent link">#</a></h3>
+<p>Bressloff, P. C., Cowan, J. D., Golubitsky, M., Thomas, P. J., &amp; Wiener,
+M. C. (2002). What geometric visual hallucinations tell us about the
+visual cortex. Neural Computation, 14(3), 473–491.
+http://doi.org/10.1162/089976602317250861<br/>
+Cummings, J. L., &amp; Miller, B. L. (1987). Visual hallucinations. Clinical
+occurrence and use in differential diagnosis. The Western Journal of
+Medicine, 146(1), 46–51.<br/>
+*Ermentrout, G. B., &amp; Cowan, J. D. (1979). A mathematical theory of
+visual hallucination patterns. Biological Cybernetics, 34(3), 137–150.
+http://doi.org/10.1007/BF00336965<br/>
+Merabet, L. B., Maguire, D., Warde, A., Alterescu, K., Stickgold, R., &amp;
+Pascual-Leone, A. (2004). Visual hallucinations during prolonged
+blindfolding in sighted subjects. Journal of Neuro-Ophthalmology, 24(2),
+109–113.<br/>
+Howard, R. J., Brammer, M. J., David, A., Woodruff, P., &amp; Williams, S.
+(1998). The anatomy of conscious vision: an fMRI study of visual
+hallucinations. Nature neuroscience, 1(8), 738-742.Seriès, P., Reichert,
+D. P., &amp; Storkey, A. J. (2010). Hallucinations in Charles Bonnet
+Syndrome Induced by Homeostasis: a Deep Boltzmann Machine Model,
+2020–2028.<br/>
+Silverstein, S. M. (2016). Visual Perception Disturbances in
+Schizophrenia: A Unified Model. In The Neuropsychopathology of
+Schizophrenia: Molecules, Brain Systems, Motivation, and Cognition (3rd
+ed., Vol. 63, pp. 77–132). Cham: Springer International Publishing.
+http://doi.org/10.1007/978-3-319-30596-7_4<br/>
+Kumar, S., Sedley, W., Barnes, G. R., Teki, S., Friston, K. J., &amp;
+Griffiths, T. D. (2014). A brain basis for musical hallucinations.
+Cortex, 52(C), 86–97. http://doi.org/10.1016/j.cortex.2013.12.002</p>
+<h3 id="imagery-and-imagination">Imagery and imagination<a class="headerlink" href="#imagery-and-imagination" title="Permanent link">#</a></h3>
+<p>Chetverikov, A., &amp; Kristjánsson, Á. (2016). On the joys of perceiving:
+Affect as feedback for perceptual predictions. Actpsy, 169(C), 1–10.
+http://doi.org/10.1016/j.actpsy.2016.05.005<br/>
+Dijkstra, N., Zeidman, P., Ondobaka, S., Gerven, M. A. J., &amp; Friston, K.
+(2017). Distinct Top-down and Bottom-up Brain Connectivity During Visual
+Perception and Imagery. Scientific Reports, 1–9.
+http://doi.org/10.1038/s41598-017-05888-8<br/>
+Friston, K. J., Lin, M., Frith, C. D., Pezzulo, G., Hobson, J. A., &amp;
+Ondobaka, S. (2017). Active Inference, Curiosity and Insight. Neural
+Computation, 29(10), 2633–2683. http://doi.org/10.1162/neco_a_00999<br/>
+Kosslyn, S. M., &amp; Thompson, W. L. (2003). When is early visual cortex
+activated during visual mental imagery? Psychological Bulletin, 129(5),
+723–746. http://doi.org/10.1037/0033-2909.129.5.723<br/>
+Kosslyn, S. M., Alpert, N. M., Thompson, W. L., Maljkovic, V., Weise, S.
+B., Chabris, C. F., et al. (1993). Visual Mental Imagery Activates
+Topographically Organized Visual Cortex: PET Investigations. Journal of
+Cognitive Neuroscience, 5(3), 263–287.
+http://doi.org/10.1162/jocn.1993.5.3.263<br/>
+Kosslyn, S., &amp; Ganis, G. (2000). Neural foundations of imagery. Nature
+Reviews ….<br/>
+Pearson, J., Naselaris, T., Holmes, E. A., &amp; Kosslyn, S. M. (2015).
+Mental Imagery: Functional Mechanisms and Clinical Applications. Trends
+in Cognitive Sciences, 19(10), 590–602.
+http://doi.org/10.1016/j.tics.2015.08.003<br/>
+Riecke, L., A. J. van Opstal, R. Goebel, and E. Formisano. “Hearing
+Illusory Sounds in Noise: Sensory-Perceptual Transformations in Primary
+Auditory Cortex.” Journal of Neuroscience 27, no. 46 (November 14,
+2007): 12684–89. https://doi.org/10.1523/JNEUROSCI.2713-07.2007.<br/>
+Schacter, D. L., Addis, D. R., Hassabis, D., Martin, V. C., Spreng, R.
+N., &amp; Szpunar, K. K. (2012). The Future of Memory: Remembering,
+Imagining, and the Brain. Neuron, 76(4), 677–694.
+http://doi.org/10.1016/j.neuron.2012.11.001<br/>
+Zatorre, R. J., &amp; Halpern, A. R. (2005). Mental Concerts: Musical
+Imagery and Auditory Cortex. Neuron, 47(1), 9–12.
+http://doi.org/10.1016/j.neuron.2005.06.013</p>
+<h3 id="imagery-and-memory">Imagery and memory<a class="headerlink" href="#imagery-and-memory" title="Permanent link">#</a></h3>
+<p>Albers, A. M., Kok, P., Toni, I., Dijkerman, H. C., &amp; de Lange, F. P.
+(2013). Shared Representations for Working Memory and Mental Imagery in
+Early Visual Cortex. Curbio, 23(15), 1427–1431.
+http://doi.org/10.1016/j.cub.2013.05.065<br/>
+Christophel, T. B., Klink, P. C., Spitzer, B., Roelfsema, P. R., &amp;
+Haynes, J.-D. (2017). The Distributed Nature of Working Memory. Trends
+in Cognitive Sciences, 1–15. http://doi.org/10.1016/j.tics.2016.12.007<br/>
+Naselaris, T., Olman, C. A., Stansbury, D. E., Ugurbil, K., &amp; Gallant,
+J. L. (2015). A voxel-wise encoding model for early visual areas decodes
+mental images of remembered scenes. NeuroImage, 105(C), 215–228.
+http://doi.org/10.1016/j.neuroimage.2014.10.018<br/>
+Self, M. W., van Kerkoerle, T., &amp; Roelfsema, P. R. (2016).
+Layer-specificity in the effects of attention and working memory on
+activity in primary visual cortex. Nature Communications, 8, 1–12.
+http://doi.org/10.1038/ncomms13804<br/>
+Stickgold, R. (2005). Sleep-dependent memory consolidation. Nature,
+437(7063), 1272–1278. http://doi.org/10.1038/nature04286</p>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 18, 2020</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: PSY5038F2018" class="md-footer__link md-footer__link--prev" href="../PSY5038F2018/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              PSY5038F2018
+            </div>
+</div>
+</a>
+<a aria-label="Next: Lightness and Shape" class="md-footer__link md-footer__link--next" href="../../demos/lightness-shape/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Lightness and Shape
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/kerstenlab" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://scholar.google.com/citations?user=6j1ZjJsAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener" target="_blank" title="scholar.google.com">
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2 343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": "navigation.indexes navigation.expand", "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+<script src="../../assets/javascripts/bundle.e3b2bf44.min.js"></script>
+</body>
+</html>

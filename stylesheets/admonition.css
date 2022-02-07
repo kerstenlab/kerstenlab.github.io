@@ -1,0 +1,25 @@
+.md-typeset .admonition.member, .md-typeset details.member {
+    border-left-color: #7a0019;
+}
+
+.md-typeset .admonition.person, .md-typeset details.person {
+    border-left-color: #fc3;
+}
+
+.md-typeset .admonition.highlights, .md-typeset details.highlights {
+    border-left-color: #fc3;
+}
+  
+.admonition.collaborator, .admonition.member, .admonition.person, .md-typeset details.collaborator, .md-typeset details.member, .md-typeset details.person {
+    max-width: 368.41px;
+}
+  
+.admonition.collaborator img, .admonition.member img, .admonition.person img, .md-typeset details.collaborator img, .md-typeset details.member img, .md-typeset details.person img {
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    float: right;
+    margin: 0 0 1em 1em;
+}
+  
