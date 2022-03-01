@@ -104,6 +104,7 @@ image patches. *Journal of Cognitive Neuroscience*, *26*(8), 1764–1774.
 Kersten, Daniel, Shakespeare, R., & Thompson, W. (2013). Predicting
 visibility in designs of public spaces. *University of Utah Technical
 Reports*, *UUCS 13-001*.
+<https://www.cs.utah.edu/docs/techreports/2013/pdf/UUCS-13-001.pdf>
 
 Mannion, D. J., Kersten, D., & Olman, C. A. (2013). Consequences of
 polar form coherence for fMRI responses in human visual cortex.
@@ -277,7 +278,7 @@ Kersten, Daniel, & Yuille, A. (2003). Bayesian models of object
 perception. *Current Opinion in Neurobiology*, *13*(2), 150–158.
 <https://doi.org/10.1016/s0959-4388(03)00042-4>
 
-Liu, Z., & Kersten, D. (2003). Three-dimensional symmetric shapes are
+Liu, Zili, & Kersten, D. (2003). Three-dimensional symmetric shapes are
 discriminated more efficiently than asymmetric ones. *JOSA A*, *20*(7),
 1331–1340. <https://doi.org/10.1364/josaa.20.001331>
 
@@ -326,9 +327,9 @@ depends on the task. *International Journal of Computer Vision*,
 
 Bloj, M., Kersten, D., & Hurlbert, A. (1999). 3D shape perception
 influences colour perception via mutual illumination. *Nature*, *402*,
-877–879.
+877–879. <https://doi.org/10.1038/47245>
 
-Liu, Z., Kersten, D., & Knill, D. C. (1999). Dissociating stimulus
+Liu, Zili, Kersten, D., & Knill, D. C. (1999). Dissociating stimulus
 information from internal representation—a case study in object
 recognition. *Vision Research*, *39*(3), 603–612.
 <https://doi.org/10.1016/s0042-6989(98)00167-9>
@@ -349,7 +350,9 @@ Illumination effects in face recognition. *Psychobiology*, *26*(4),
 
 Liu, Z., & Kersten, D. (1998). 2D affine transformations cannot account
 for human 3D object recognition. *Sixth international conference on
-computer vision (IEEE cat. No. 98CH36271)*, 549–554.
+computer vision (IEEE cat. no.98CH36271)*, 549–554.
+<https://doi.org/10.1109/ICCV.1998.710770>
+<https://kerstenlab.psych.umn.edu/fulltext/LiuKersten1998.pdf>
 
 Mamassian, P., Knill, D. C., & Kersten, D. (1998). The perception of
 cast shadows. *Trends in Cognitive Sciences*, *2*(8), 288–295.
@@ -366,7 +369,7 @@ Thompson, W. B., Shirley, P., Smits, B., Kersten, D. J., & Madison, C.
 <https://kerstenlab.psych.umn.edu/fulltext/Thompson1998.pdf>
 
 Troje, N. F., & Kersten, D. (1998). *Viewer-centered recognition of
-familiar faces*.
+familiar faces*. <http://hdl.handle.net/11858/00-001M-0000-0013-E8F9-6>
 
 Kersten, Daniel. (1997a). Inverse 3-d graphics: A metaphor for visual
 perception. *Behavior Research Methods, Instruments, & Computers*,
@@ -421,7 +424,7 @@ Mamassian, P., Kersten, D., & Knill, D. C. (1996). Categorical
 local-shape perception. *Perception*, *25*(1), 95–107.
 <https://doi.org/10.1068/p250095>
 
-Liu, Z., Knill, D. C., & Kersten, D. (1995). Object classification for
+Liu, Zili, Knill, D. C., & Kersten, D. (1995). Object classification for
 human and ideal observers. *Vision Research*, *35*(4), 549–568.
 <https://doi.org/10.1016/0042-6989(94)00150-k>
 
